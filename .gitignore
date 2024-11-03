@@ -1,0 +1,27 @@
+# terraform files and directories to ignore
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+*.tfvars.json
+terraform.tfstate
+terraform.tfstate.backup
+
+# MacOS files to ignore
+.DS_Store
+
+# python files to ignore
+*.pyc
+
+# vscode files to ignore
+.vscode/
+*.code-workspace
+# git files to ignore
+.git/
+
+# misc files to ignore
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
