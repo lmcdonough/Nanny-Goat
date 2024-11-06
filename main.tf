@@ -1,4 +1,4 @@
-# main.tf
+# Root main.tf - Orchestrates the deployment of all the modules
 
 # terraform provider and required providers block
 terraform {
@@ -15,4 +15,13 @@ terraform {
 provider "aws" {
   region  = var.aws_region
   profile = var.aws_profile
+}
+
+# MODULES
+
+# networking module
+module "network" {
+  source      = "./modules/network"
+  aws_region  = var.aws_region
+  environment = var.environment
 }
