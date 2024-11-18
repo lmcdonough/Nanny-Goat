@@ -24,4 +24,5 @@ module "networking" {
   source      = "./modules/networking"
   environment = var.environment
   aws_region  = var.aws_region
+  
 }
