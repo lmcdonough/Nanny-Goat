@@ -20,8 +20,8 @@ provider "aws" {
 # MODULES
 
 # networking module
-module "network" {
-  source      = "./modules/network"
-  aws_region  = var.aws_region
+module "networking" {
+  source      = "./modules/networking"
   environment = var.environment
+  aws_region  = var.aws_region
 }
